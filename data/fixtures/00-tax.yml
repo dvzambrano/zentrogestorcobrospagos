@@ -1,0 +1,42 @@
+Tax:
+  1:
+    code: '011402'
+    name: 'Impuesto sobre Ventas Personas Naturales'
+  2:
+    code: '020102'
+    name: 'Impuesto sobre los Servicios'
+  3:
+    code: '020082'
+    name: 'Impuesto por el Arrendamiento de Viviendas, Habitaciones o Espacios'
+  4:
+    code: '051012'
+    name: 'Impuesto sobre los Ingresos Personales'
+  5:
+    code: '053022'
+    name: 'Impuesto sobre los Ingresos Personales Liquidación Adicional'
+    period: 'Y'
+  6:
+    code: '051052'
+    name: 'Régimen Simplificado Personas Naturales'
+  7:
+    code: '061032'
+    name: 'Impuesto por la Utilización de la Fuerza de Trabajo Personas Naturales'
+  8:
+    code: '082013'
+    name: 'Contribución Especial de los Trabajadores a la Seguridad Social'
+    period: 'T'
+  9:
+    code: '053032'
+    name: 'Ingresos Personales Eventuales'
+  10:
+    code: '072012'
+    name: 'Impuesto sobre Transmisión de Bienes y Herencias'
+  11:
+    code: '082023'
+    name: 'Contribución Especial de Trabajadores a la Seguridad Social. Retenciones'
+  12:
+    code: '090012'
+    name: 'Impuesto por anuncio comercial'
+  13:
+    code: '106012'
+    name: 'Recargo'

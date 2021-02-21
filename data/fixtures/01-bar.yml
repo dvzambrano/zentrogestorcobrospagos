@@ -1,0 +1,36 @@
+Bar:
+  1:
+    code: '2013114'
+    year: 2013
+    month: 11
+    general: '380-33'
+    simplified: '411-11'
+    Tax: [2]
+  2:
+    code: '2013112'
+    year: 2013
+    month: 11
+    general: '480-43'
+    simplified: '511-11'
+    Tax: [4]
+  3:
+    code: '2013124'
+    year: 2013
+    month: 12
+    general: '588-33'
+    simplified: '411-11'
+    Tax: [2]
+  4:
+    code: '2013122'
+    year: 2013
+    month: 12
+    general: '688-43'
+    simplified: '511-11'
+    Tax: [4]
+  5:
+    code: '20135'
+    year: 2013
+    month: 12
+    general: '189-03'
+    simplified: '511-11'
+    Tax: [5]

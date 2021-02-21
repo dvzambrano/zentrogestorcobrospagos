@@ -1,0 +1,471 @@
+Person:
+  connection: doctrine
+  tableName: zab_person
+  columns:
+    code:
+      type: string(50)
+      notnull: false
+      unique: true
+    phone:
+      type: string(50)
+    cellphone:
+      type: string(50)
+    address:
+      type: string()
+    comment:
+      type: string()
+    picture:
+      type: string()
+    profile:
+      type: string()
+    patent:
+      type: string(50)
+    inscription:
+      type: string(50)
+    nit:
+      type: string(50)
+    birthdate:
+      type: date
+    patented:
+      type: boolean()
+      default: false 
+    usufructuary:
+      type: boolean()
+      default: false 
+    client:
+      type: boolean()
+      default: false 
+    collectday:
+      type: integer
+      default: 20 
+    creationdate:
+      type: date
+    deletiondate:
+      type: date
+    locationid:
+      type: integer
+    placeid:
+      type: integer
+    sexid:
+      type: integer
+    sf_guard_user_id:
+      type: integer
+  relations:
+    Location: { onDelete: SET NULL, local: locationid, foreign: id, foreignAlias: Persons }
+    Place: { onDelete: SET NULL, local: placeid, foreign: id, foreignAlias: Persons }
+    Sex: { onDelete: SET NULL, local: sexid, foreign: id, foreignAlias: Persons }
+    sfGuardUser: { onDelete: CASCADE, local: sf_guard_user_id, foreign: id, type: one }
+    Activities: { class: Activity, refClass: PersonActivityRelation, local: person_id, foreign: activity_id, type: many }
+    Employees: { class: Person, refClass: PersonPersonRelation, local: employer_id, foreign: employee_id, type: many }
+    Taxes: { class: Tax, refClass: TaxPersonRelation, local: person_id, foreign: tax_id, type: many }
+    Services: { class: Service, refClass: ServicePersonRelation, local: person_id, foreign: service_id, type: many }
+    Payments: { class: Bar, refClass: PersonPaymentRelation, local: person_id, foreign: payment_id, type: many }
+PersonPaymentRelation:
+  connection: doctrine
+  tableName: zgtcp_personpaymentrelation
+  columns:
+    person_id:
+      type: integer
+      primary: true
+    payment_id:
+      type: integer
+      primary: true
+    amount:
+      type: decimal()
+    deposited:
+      type: boolean()
+    paymentdate:
+      type: date
+    colector_id:
+      type: integer
+  relations:
+    Payment:
+      class: Bar
+      local: payment_id
+      onDelete: CASCADE
+    Person:
+      class: Person
+      local: person_id
+      onDelete: CASCADE
+    Colector:
+      class: Person
+      local: colector_id
+      onDelete: CASCADE
+TaxPersonRelation:
+  connection: doctrine
+  tableName: zgtcp_taxpersonrelation
+  columns:
+    person_id:
+      type: integer
+      primary: true
+    tax_id:
+      type: integer
+      primary: true
+    amount:
+      type: decimal()
+    fixed:
+      type: boolean()
+  relations:
+    Tax:
+      class: Tax
+      local: tax_id
+      onDelete: CASCADE
+    Person:
+      class: Person
+      local: person_id
+      onDelete: CASCADE
+ServicePersonRelation:
+  connection: doctrine
+  tableName: zgtcp_servicepersonrelation
+  columns:
+    person_id:
+      type: integer
+      primary: true
+    service_id:
+      type: integer
+      primary: true
+    amount:
+      type: decimal()
+    collectday:
+      type: integer
+  relations:
+    Service:
+      class: Service
+      local: service_id
+      onDelete: CASCADE
+    Person:
+      class: Person
+      local: person_id
+      onDelete: CASCADE
+PersonActivityRelation:
+  connection: doctrine
+  tableName: zgtcp_personactivityrelation
+  columns:
+    activity_id:
+      type: integer
+      primary: true
+    person_id:
+      type: integer
+      primary: true
+    fromdate:
+      type: date
+  relations:
+    Person:
+      class: Person
+      local: person_id
+      onDelete: CASCADE
+    Activity:
+      class: Activity
+      local: activity_id
+      onDelete: CASCADE
+PersonPersonRelation:
+  connection: doctrine
+  tableName: zgtcp_personpersonrelation
+  columns:
+    employer_id:
+      type: integer
+      primary: true
+    employee_id:
+      type: integer
+      primary: true
+    amount:
+      type: decimal()
+  relations:
+    Employer:
+      class: Person
+      local: employer_id
+      onDelete: CASCADE
+    Employee:
+      class: Person
+      local: employee_id
+      onDelete: CASCADE
+
+# Activity-START*/
+Activity:
+  connection: doctrine
+  tableName: zgtcp_activity
+  columns:
+    fixed:
+      type: boolean()
+      notnull: true
+    amount:
+      type: decimal()
+      notnull: true
+    comment:
+      type: string()
+      notnull: false
+    name:
+      type: string(130)
+      notnull: true
+    code:
+      type: string(30)
+      notnull: true
+      unique: true
+    activitygroupid:
+      type: integer
+    onatcode:
+      type: string(30)
+    mtsscode:
+      type: string(30)
+  relations:
+    Activitygroup: { onDelete: SET NULL, local: activitygroupid, foreign: id, foreignAlias: Activities }
+    Elements: { class: Element, refClass: ElementActivityRelation, local: activity_id, foreign: element_id, type: many }
+    Taxes: { class: Tax, refClass: TaxActivityRelation, local: activity_id, foreign: tax_id, type: many }
+    Persons: { class: Person, refClass: PersonActivityRelation, local: activity_id, foreign: person_id, type: many }
+ElementActivityRelation:
+  connection: doctrine
+  tableName: zgtcp_elementactivityrelation
+  columns:
+    element_id:
+      type: integer
+      primary: true
+    activity_id:
+      type: integer
+      primary: true
+  relations:
+    Activity:
+      class: Activity
+      local: activity_id
+      onDelete: CASCADE
+    Element:
+      class: Element
+      local: element_id
+      onDelete: CASCADE
+TaxActivityRelation:
+  connection: doctrine
+  tableName: zgtcp_taxactivityrelation
+  columns:
+    activity_id:
+      type: integer
+      primary: true
+    tax_id:
+      type: integer
+      primary: true
+    amount:
+      type: decimal()
+    fixed:
+      type: boolean()
+  relations:
+    Tax:
+      class: Tax
+      local: tax_id
+      onDelete: CASCADE
+    Activity:
+      class: Activity
+      local: activity_id
+      onDelete: CASCADE
+# Activity-END*/
+
+# Place-START*/
+Place:
+  connection: doctrine
+  tableName: zgtcp_place
+  columns:
+    comment:
+      type: string()
+      notnull: false
+    name:
+      type: string(130)
+      notnull: true
+    code:
+      type: string(30)
+      notnull: true
+      unique: true
+# Place-END*/
+
+# Sex-START*/
+Sex:
+  connection: doctrine
+  tableName: zgtcp_sex
+  columns:
+    comment:
+      type: string()
+      notnull: false
+    name:
+      type: string(130)
+      notnull: true
+    code:
+      type: string(30)
+      notnull: true
+      unique: true
+# Sex-END*/
+
+# Activitygroup-START*/
+Activitygroup:
+  connection: doctrine
+  tableName: zgtcp_activitygroup
+  columns:
+    fixed:
+      type: boolean()
+      notnull: true
+    amount:
+      type: decimal()
+      notnull: true
+    comment:
+      type: string()
+      notnull: false
+    name:
+      type: string(130)
+      notnull: true
+    code:
+      type: string(30)
+      notnull: true
+      unique: true
+# Activitygroup-END*/
+
+# Element-START*/
+Element:
+  connection: doctrine
+  tableName: zgtcp_element
+  columns:
+    comment:
+      type: string()
+      notnull: false
+    name:
+      type: string(130)
+      notnull: true
+    code:
+      type: string(30)
+      notnull: true
+      unique: true
+
+# Element-END*/
+
+
+
+
+# Tax-START*/
+Tax:
+  connection: doctrine
+  tableName: zgtcp_tax
+  columns:  
+    period:
+      type: string(1)
+      default: 'M' 
+    comment:
+      type: string()
+      notnull: false
+    name:
+      type: string(130)
+      notnull: true
+    code:
+      type: string(30)
+      notnull: true
+      unique: true
+  relations:
+    TaxTaxes: { class: Tax, refClass: TaxTaxRelation, local: tax_id, foreign: taxrelated_id, type: many }
+    Activities: { class: Activity, refClass: TaxActivityRelation, local: tax_id, foreign: activity_id, type: many }
+    Persons: { class: Person, refClass: TaxPersonRelation, local: tax_id, foreign: person_id, type: many }
+
+TaxTaxRelation:
+  connection: doctrine
+  tableName: zgtcp_taxtaxrelation
+  columns:
+    tax_id:
+      type: integer
+      primary: true
+    taxrelated_id:
+      type: integer
+      primary: true
+  relations:
+    Tax:
+      class: Tax
+      local: tax_id
+      onDelete: CASCADE
+    Taxrelated:
+      class: Tax
+      local: taxrelated_id
+      onDelete: CASCADE
+
+# Tax-END*/
+
+
+# Bar-START*/
+Bar:
+  connection: doctrine
+  tableName: zgtcp_bar
+  columns:
+    taxid:
+      type: integer()
+      notnull: false
+    simplified:
+      type: string()
+      notnull: false
+    general:
+      type: string()
+      notnull: false
+    month:
+      type: integer()
+      notnull: false
+    year:
+      type: integer()
+      notnull: false
+    code:
+      type: string(30)
+      notnull: true
+      unique: true
+    taxid:
+      type: integer
+  relations:
+    Tax: { onDelete: CASCADE, local: taxid, foreign: id, foreignAlias: Bars }
+
+
+# Bar-END*/
+
+
+
+
+
+# Service-START*/
+Service:
+  connection: doctrine
+  tableName: zgtcp_service
+  columns:
+    amount:
+      type: decimal()
+      notnull: true
+    comment:
+      type: string()
+      notnull: false
+    name:
+      type: string(130)
+      notnull: true
+    code:
+      type: string(30)
+      notnull: true
+      unique: true
+# Service-END*/
+
+
+Transaction:
+  connection: doctrine
+  tableName: zgtcp_transaction
+  columns:
+    creationdate:
+      type: date
+    comment:
+      type: string()
+    debit:
+      type: decimal()
+    credit:
+      type: decimal()
+    person_id:
+      type: integer
+    activity_id:
+      type: integer
+  relations:
+    Person: { onDelete: CASCADE, local: person_id, foreign: id, foreignAlias: Transactions }
+    Activity: { onDelete: CASCADE, local: activity_id, foreign: id, foreignAlias: Transactions }
+Regannex:
+  connection: doctrine
+  tableName: zgtcp_regannex
+  columns:
+    element_id:
+      type: integer
+    amount:
+      type: decimal()
+    transaction_id:
+      type: integer
+  relations:
+    Element: { onDelete: CASCADE, local: element_id, foreign: id, foreignAlias: Regannexs }
+    Transaction: { onDelete: CASCADE, local: transaction_id, foreign: id, foreignAlias: Regannexs }

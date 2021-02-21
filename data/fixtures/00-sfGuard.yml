@@ -1,0 +1,252 @@
+sfGuardUser:
+  Admin:
+    first_name:  Donel
+    last_name:  'Vazquez Zambrano'
+    email_address:  zentro@nauta.cu
+    username:       admin
+    password:       admin
+    is_super_admin: true
+    Groups:         [AdminGroup]
+
+sfGuardGroup:
+  AdminGroup:
+    name:           admin
+    description:    Administradores
+    Permissions:    [manageperson, managelocation, manageplace, manageelement, manageservice, managetransaction, manageconfiguration, manageuser, manageactivity, managetax, manageactivitygroup, managelog, managemodule, managefiles]
+  ColectorMangerGroup:
+    name:           colectormanger
+    description:    'Gestor cobrador'
+    Permissions:    [managepersonadd, managepersonedit, managepersondelete, managepersonpayment, managepersonreport, managepersonsignout]
+  AccountantGroup:
+    name:           accountant
+    description:    'Tenedor de libros'
+    Permissions:    [managepersonadd, managepersonedit, managepersondelete, managepersontransaction, managepersonreport, managepersonsignout]
+  RecepcionistGroup:
+    name:           recepcionist
+    description:    Recepcionistas
+    Permissions:    [managepersonadd, managepersonreport]
+
+sfGuardPermission:
+  managemodule:
+    name:           managemodule
+    description:    'Administrar módulos'
+  managemoduleadd:
+    name:           managemoduleadd
+    description:    'Administrar módulos (adicionar)'
+  managemoduleedit:
+    name:           managemoduleedit
+    description:    'Administrar módulos (editar)'
+  managemoduledelete:
+    name:           managemoduledelete
+    description:    'Administrar módulos (eliminar)'
+    
+  manageuser:
+    name:           manageuser
+    description:    'Administrar usuarios'
+  manageuseradd:
+    name:           manageuseradd
+    description:    'Administrar usuarios (adicionar)'
+  manageuseredit:
+    name:           manageuseredit
+    description:    'Administrar usuarios (editar)'
+  manageuserdelete:
+    name:           manageuserdelete
+    description:    'Administrar usuarios (eliminar)'
+
+  manageperson:
+    name:           manageperson
+    description:    'Administrar personas'
+  managepersonadd:
+    name:           managepersonadd
+    description:    'Administrar personas (adicionar)'
+  managepersonedit:
+    name:           managepersonedit
+    description:    'Administrar personas (editar)'
+  managepersondelete:
+    name:           managepersondelete
+    description:    'Administrar personas (eliminar)'
+
+  managefiles:
+    name:           managefiles
+    description:    'Administrar archivos'
+
+  managelog:
+    name:           managelog
+    description:    'Administrar trazas'
+
+  managecharts:
+    name:           managecharts
+    description:    'Administrar graficos'
+
+  managecalendar:
+    name:           managecalendar
+    description:    'Administrar calendario'
+
+  manageconfiguration:
+    name:           manageconfiguration
+    description:    'Administrar configuracion global'
+    
+  managecontacttype:
+    name:           managecontacttype
+    description:    'Administrar tipos de contacto'
+  managecontacttypeadd:
+    name:           managecontacttypeadd
+    description:    'Administrar tipos de contacto (adicionar)'
+  managecontacttypeedit:
+    name:           managecontacttypeedit
+    description:    'Administrar tipos de contacto (editar)'
+  managecontacttypedelete:
+    name:           managecontacttypedelete
+    description:    'Administrar tipos de contacto (eliminar)'
+    
+  manageentity:
+    name:           manageentity
+    description:    'Administrar entidades'
+  manageentityadd:
+    name:           manageentityadd
+    description:    'Administrar entidades (adicionar)'
+  manageentityedit:
+    name:           manageentityedit
+    description:    'Administrar entidades (editar)'
+  manageentitydelete:
+    name:           manageentitydelete
+    description:    'Administrar entidades (eliminar)'
+  manageselfentity:
+    name:           manageselfentity
+    description:    'Administrar propia entidad'
+    
+
+# ------------------------------------------------------------------------------    
+    
+  manageactivity:
+    name:           manageactivity
+    description:    'Administrar actividades'
+  manageactivityadd:
+    name:           manageactivityadd
+    description:    'Administrar actividades (adicionar)'
+  manageactivityedit:
+    name:           manageactivityedit
+    description:    'Administrar actividades (editar)'
+  manageactivitydelete:
+    name:           manageactivitydelete
+    description:    'Administrar actividades (eliminar)'
+    
+  managetransaction:
+    name:           managetransaction
+    description:    'Administrar balances'
+    
+  manageactivitygroup:
+    name:           manageactivitygroup
+    description:    'Administrar grupos de actividades'
+  manageactivitygroupadd:
+    name:           manageactivitygroupadd
+    description:    'Administrar grupos de actividades (adicionar)'
+  manageactivitygroupedit:
+    name:           manageactivitygroupedit
+    description:    'Administrar grupos de actividades (editar)'
+  manageactivitygroupdelete:
+    name:           manageactivitygroupdelete
+    description:    'Administrar grupos de actividades (eliminar)'
+    
+  managetax:
+    name:           managetax
+    description:    'Administrar impuestos'
+  managetaxadd:
+    name:           managetaxadd
+    description:    'Administrar impuestos (adicionar)'
+  managetaxedit:
+    name:           managetaxedit
+    description:    'Administrar impuestos (editar)'
+  managetaxdelete:
+    name:           managetaxdelete
+    description:    'Administrar impuestos (eliminar)'
+    
+  manageperson:
+    name:           manageperson
+    description:    'Administrar personas'
+  managepersonadd:
+    name:           managepersonadd
+    description:    'Administrar personas (adicionar)'
+  managepersonedit:
+    name:           managepersonedit
+    description:    'Administrar personas (editar)'
+  managepersondelete:
+    name:           managepersondelete
+    description:    'Administrar personas (eliminar)'
+  managepersonpayment:
+    name:           managepersonpayment
+    description:    'Administrar pagos de obligaciones'
+  managepersontransaction:
+    name:           managepersontransaction
+    description:    'Administrar comprobantes'
+  managepersonreport:
+    name:           managepersonreport
+    description:    'Administrar reportes'
+  managepersonsignout:
+    name:           managepersonsignout
+    description:    'Administrar bajas'
+    
+  manageservice:
+    name:           manageservice
+    description:    'Administrar servicios'
+  manageserviceadd:
+    name:           manageserviceadd
+    description:    'Administrar servicios (adicionar)'
+  manageserviceedit:
+    name:           manageserviceedit
+    description:    'Administrar servicios (editar)'
+  manageservicedelete:
+    name:           manageservicedelete
+    description:    'Administrar servicios (eliminar)'
+    
+  managesex:
+    name:           managesex
+    description:    'Administrar sexos'
+  managesexadd:
+    name:           managesexadd
+    description:    'Administrar sexos (adicionar)'
+  managesexedit:
+    name:           managesexedit
+    description:    'Administrar sexos (editar)'
+  managesexdelete:
+    name:           managesexdelete
+    description:    'Administrar sexos (eliminar)'
+    
+  manageelement:
+    name:           manageelement
+    description:    'Administrar elementos de gastos'
+  manageelementadd:
+    name:           manageelementadd
+    description:    'Administrar elementos de gastos (adicionar)'
+  manageelementedit:
+    name:           manageelementedit
+    description:    'Administrar elementos de gastos (editar)'
+  manageelementdelete:
+    name:           manageelementdelete
+    description:    'Administrar elementos de gastos (eliminar)'
+    
+  managelocation:
+    name:           managelocation
+    description:    'Administrar localizaciones'
+  managelocationadd:
+    name:           managelocationadd
+    description:    'Administrar localizaciones (adicionar)'
+  managelocationedit:
+    name:           managelocationedit
+    description:    'Administrar localizaciones (editar)'
+  managelocationdelete:
+    name:           managelocationdelete
+    description:    'Administrar localizaciones (eliminar)'
+    
+  manageplace:
+    name:           manageplace
+    description:    'Administrar lugares de trabajo'
+  manageplaceadd:
+    name:           manageplaceadd
+    description:    'Administrar lugares de trabajo (adicionar)'
+  manageplaceedit:
+    name:           manageplaceedit
+    description:    'Administrar lugares de trabajo (editar)'
+  manageplacedelete:
+    name:           manageplacedelete
+    description:    'Administrar lugares de trabajo (eliminar)'

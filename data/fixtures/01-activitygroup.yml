@@ -1,0 +1,48 @@
+Activitygroup:
+  I:
+    code: '<?php echo md5(strtoupper("Grupo I")) ?>'
+    name: "Grupo I"
+    comment: "Elaboracion y venta de productos alimenticios y agropecuarios: hasta un cincuenta por ciento (50 %) de los ingresos obtenidos."
+    amount: 50
+    fixed: 0
+  II:
+    code: '<?php echo md5(strtoupper("Grupo II")) ?>'
+    name: "Grupo II"
+    comment: "Elaboracion y comercializacion de productos industriales y artesanales: hasta un treinta por ciento (30 %) de los ingresos obtenidos."
+    amount: 30
+    fixed: 0
+  III:
+    code: '<?php echo md5(strtoupper("Grupo III")) ?>'
+    name: "Grupo III"
+    comment: "Actividades de servicios personales, tecnicos y mantenimiento constructivo: hasta el veinticinco por ciento (25 %) de los ingresos obtenidos."
+    amount: 25
+    fixed: 0
+  IV:
+    code: '<?php echo md5(strtoupper("Grupo IV")) ?>'
+    name: "Grupo IV"
+    comment: "Arrendamiento de viviendas, habitaciones y espacios que sean parte integrante de la vivienda: hasta el veinte por ciento (20 %) de los ingresos obtenidos."
+    amount: 20
+    fixed: 0
+  V:
+    code: '<?php echo md5(strtoupper("Grupo V")) ?>'
+    name: "Grupo V"
+    comment: "Otras actividades: hasta el diez (10 %) de los ingresos obtenidos."
+    amount: 10
+    fixed: 0
+  VI:
+    code: '<?php echo md5(strtoupper("Grupo VI")) ?>'
+    name: "Grupo VI"
+    comment: "Actividades de servicios de construccion, mantenimiento y reparacion de bienes muebles e inmuebles: hasta el treinta por ciento (30 %) de los ingresos obtenidos."
+    amount: 30
+    fixed: 0
+  VII:
+    code: '<?php echo md5(strtoupper("Grupo VII")) ?>'
+    name: "Grupo VII"
+    comment: "Actividades de Transporte de Carga y Pasajeros: hasta un cuarenta por ciento (40 %) de los ingresos obtenidos."
+    amount: 40
+    fixed: 0
+#  RegimenSimplificado:
+#    code: '<?php echo md5(strtoupper("Regimen Simplificado")) ?>'
+#    name: "Regimen Simplificado"
+#    amount: 0
+#    fixed: 1

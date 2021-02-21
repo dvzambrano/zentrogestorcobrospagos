@@ -1,0 +1,255 @@
+Module:
+  Person:
+    code: "<?php echo md5(strtoupper('Personas')) ?>"
+    name: 'Personas'
+    nick: 'Person'
+    comment: 'Gestión de personas'
+    icon: 'user_suit.png'
+    is_multientidable: 1
+    is_base: 1
+    DependentModules: [Sex, Location, Place, Activity, Service, User]
+    Permissions: [manageperson, managepersonadd, managepersonedit, managepersondelete, managepersonpayment, managepersontransaction, managepersonreport, managepersonsignout]
+    increase: '0000000010'
+  Activity:
+    code: "<?php echo md5(strtoupper('Actividades')) ?>"
+    name: 'Actividades'
+    nick: 'Activity'
+    comment: 'Actividades para el trabajo por cuenta propia'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"30","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true},{"name":"Prohibida","nick":"forbidden","type":"boolean","restriction":"","nulleable":true},{"name":"Ayuda","nick":"help","type":"boolean","restriction":"","nulleable":true}]'
+    icon: 'book_open.png'
+    Permissions: [manageactivity, manageactivityadd, manageactivityedit, manageactivitydelete]
+    increase: '0000000030'
+    DependentModules: [Element, Tax]
+  Element:
+    code: "<?php echo md5(strtoupper('Elementos de gasto')) ?>"
+    name: 'Elementos de gasto'
+    nick: 'Element'
+    comment: 'Elementos de gasto'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"30","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true}]'
+    icon: 'bricks.png'
+    Permissions: [manageelement, manageelementadd, manageelementedit, manageelementdelete]
+    increase: '0000000040'
+    #Module: [Configuration]
+  Activitygroup:
+    code: "<?php echo md5(strtoupper('Grupos de actividades')) ?>"
+    name: 'Grupos de actividades'
+    nick: 'Activitygroup'
+    comment: 'Grupos de las Actividades para el trabajo por cuenta propia'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"30","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true},{"name":"Cantidad","nick":"amount","type":"decimal","restriction":""},{"name":"Tipo","nick":"fixed","type":"boolean","restriction":""}]'
+    icon: 'package.png'
+    Permissions: [manageactivitygroup, manageactivitygroupadd, manageactivitygroupedit, manageactivitygroupdelete]
+    increase: '0000000030'
+    #Module: [Activity]
+  Tax:
+    code: "<?php echo md5(strtoupper('Impuestos')) ?>"
+    name: 'Impuestos'
+    nick: 'Tax'
+    comment: 'Impuestos'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"30","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true}]'
+    relations: '[{"attributeid":"parent","attribute":"Padre","typeid":"manytomany","type":"Muchos a muchos","moduleid":"Tax","module":"Impuestos"}]'
+    icon: 'coins.png'
+    Permissions: [managetax, managetaxadd, managetaxedit, managetaxdelete]
+    increase: '0000000050'
+    #Module: [Activity]
+  Place:
+    code: "<?php echo md5(strtoupper('Lugar de trabajo')) ?>"
+    name: 'Lugar de trabajo'
+    nick: 'Place'
+    comment: 'Lugar de trabajo del trabajador por cuenta propia'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"30","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true}]'
+    icon: 'house.png'
+    Permissions: [manageplace, manageplaceadd, manageplaceedit, manageplacedelete]
+    #Module: [Configuration]
+    increase: '0000000130'
+  Sex:
+    code: "<?php echo md5(strtoupper('Sexos')) ?>"
+    name: 'Sexos'
+    nick: 'Sex'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"30","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true}]'
+    icon: 'male.png'
+    Permissions: [managesex, managesexadd, managesexedit, managesexdelete]
+    increase: '0000000020'
+    #Module: [Person]
+  Location:
+    code: "<?php echo md5(strtoupper('Localizaciones')) ?>"
+    name: 'Localizaciones'
+    nick: 'Location'
+    comment: 'Gestión de localizaciones'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"30","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true},{"name":"Padre","nick":"parent","type":"integer","restriction":"","nulleable":true}]'
+    relations: '[{"attributeid":"parent","attribute":"Padre","typeid":"onetomany","type":"Uno a muchos","moduleid":"Location","module":"Ã?rbol paginado"}]'
+    icon: 'flag_orange.png'
+    Permissions: [managelocation, managelocationadd, managelocationedit, managelocationdelete]
+    DependentModules: [Explorer]
+    increase: '0000000140'
+  Service:
+    code: "<?php echo md5(strtoupper('Servicios')) ?>"
+    name: 'Servicios'
+    nick: 'Service'
+    comment: 'Servicios'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"30","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true},{"name":"Cantidad","nick":"amount","type":"decimal","restriction":""}]'
+    icon: 'cup.png'
+    Permissions: [manageservice, manageserviceadd, manageserviceedit, manageservicedelete]
+    increase: '0000000060'
+  Transaction:
+    code: "<?php echo md5(strtoupper('Balances')) ?>"
+    name: 'Balances'
+    comment: 'Balance de comprobación de saldos'
+    nick: 'Transaction'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"30","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true},{"name":"Cantidad","nick":"amount","type":"decimal","restriction":""}]'
+    icon: 'creditcards.png'
+    Permissions: [managetransaction]
+    increase: '0000000080'
+    DependentModules: [Person]
+
+
+
+
+  Charts:
+    code: "<?php echo md5(strtoupper('Gráficos')) ?>"
+    name: 'Gráficos'
+    nick: 'Chart'
+    comment: 'Generador de gráficos del sistema'
+    icon: 'wtop-charts.png'
+    is_base: 1
+    is_active: 0
+    Permissions: [managecharts]
+    increase: '9000000000'
+  Calendar:
+    code: "<?php echo md5(strtoupper('Calendario')) ?>"
+    name: 'Calendario'
+    nick: 'Calendar'
+    comment: 'Visor de eventos del sistema'
+    attributes: '[{"name":"Nombre","nick":"name","type":"string","restriction":"","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":false}]'
+    icon: 'wtop-calendars.png'
+    is_base: 1
+    is_active: 0
+    Permissions: [managecalendar]
+    DependentModules: [Reminder]
+    increase: '9000000000'
+  User:
+    code: "<?php echo md5(strtoupper('Usuarios')) ?>"
+    name: 'Usuarios'
+    nick: 'User'
+    comment: 'Gestión de usuarios del sistema'
+    icon: 'wtop-users.png'
+    is_base: 1
+    Permissions: [manageuser, manageuseradd, manageuseredit, manageuserdelete]
+    DependentModules: [Contacttype]
+    increase: '9000000000'
+  Configuration:
+    code: "<?php echo md5(strtoupper('Configuración')) ?>"
+    name: 'Configuración'
+    nick: 'Metadata'
+    comment: 'Configuraci&oacute;n general del sistema'
+    icon: 'wtop-config.png'
+    is_base: 1
+    Permissions: [manageconfiguration]
+    increase: '9000000000'
+  Logs:
+    code: "<?php echo md5(strtoupper('Trazas')) ?>"
+    name: 'Trazas'
+    nick: 'Log'
+    comment: 'Auditoría de trazas del sistema'
+    icon: 'wtop-logs.png'
+    is_base: 1
+    Permissions: [managelog]
+    increase: '9000000000'
+  Reminder:
+    code: "<?php echo md5(strtoupper('Recordatorio')) ?>"
+    name: 'Recordatorios'
+    nick: 'Reminder'
+    comment: 'Gestión de recordatorios del sistema'
+    attributes: '[{"name":"Nombre","nick":"name","type":"string","restriction":"","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":false},{"name":"Valor","nick":"value","type":"int","restriction":"","nulleable":false},{"name":"Periodo","nick":"period","type":"int","restriction":"","nulleable":false}]'
+    icon: 'wtop-reminders.png'
+    #Module: [Configuration]
+    is_base: 1
+    is_active: 0
+    Permissions: [managecalendar]
+    DependentModules: [User]
+    increase: '9000000000'
+  Module:
+    code: "<?php echo md5(strtoupper('Módulos')) ?>"
+    name: 'Módulos'
+    nick: 'Module'
+    comment: 'Gestión de módulos del sistema'
+    attributes: '[{"name":"Código","nick":"code","type":"string","restriction":"","nulleable":false},{"name":"Nombre","nick":"name","type":"string","restriction":"","nulleable":false},{"name":"Alias","nick":"nick","type":"string","restriction":"","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":false},{"name":"Ícono","nick":"icon","type":"string","restriction":"","nulleable":true}]'
+    icon: 'wtop-modules.png'
+    #Module: [Configuration]
+    is_base: 1
+    is_active: 0
+    Permissions: [managemodule, managemoduleadd, managemoduleedit, managemoduledelete]
+    DependentModules: [User]
+    increase: '9000000000'
+  Contenteditor:
+    code: "<?php echo md5(strtoupper('Editor de contenido')) ?>"
+    name: 'Editor de contenido'
+    nick: 'Contenteditor'
+    comment: 'Editor de contenido'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"50","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true}]'
+    icon: 'page_paintbrush.png'
+    is_base: 1
+    is_active: 0
+    Permissions: [managemodule, managemoduleadd, managemoduleedit, managemoduledelete]
+    DependentModules: [Explorer]
+    increase: '9000000000'
+  Note:
+    code: "<?php echo md5(strtoupper('Editor de notas')) ?>"
+    name: 'Editor de notas'
+    nick: 'Note'
+    comment: 'Editor de notas'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"50","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true}]'
+    icon: 'page_paintbrush.png'
+    is_base: 1
+    is_active: 0
+    Permissions: [managemodule, managemoduleadd, managemoduleedit, managemoduledelete]
+    DependentModules: [Contenteditor]
+    increase: '9000000000'
+  Explorer:
+    code: "<?php echo md5(strtoupper('Explorador')) ?>"
+    name: 'Explorador'
+    nick: 'Explorer'
+    comment: 'Gestión de archivos y carpetas del sistema'
+    attributes: '[{"name":"Nombre","nick":"name","type":"string","restriction":"","nulleable":false},{"name":"Fecha de modificación","nick":"lastmod","type":"string","restriction":"","nulleable":false},{"name":"Tamaño","nick":"size","type":"string","restriction":"","nulleable":false}]'
+    icon: 'wtop-explorer.png'
+    #Module: [Configuration]
+    is_base: 1
+    is_active: 0
+    Permissions: [managefiles]
+    increase: '0000000160'
+  Contacttype:
+    code: "<?php echo md5(strtoupper('Tipos de contacto')) ?>"
+    name: 'Tipos de contacto'
+    nick: 'Contacttype'
+    comment: 'Gestión de tipos de contacto'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"50","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true}]'
+    icon: 'ekiga.png'
+    is_active: 0
+    Permissions: [managecontacttype, managecontacttypeadd, managecontacttypeedit, managecontacttypedelete]
+    increase: '0000000070'
+  Entity:
+    code: "<?php echo md5(strtoupper('Entidades')) ?>"
+    name: 'Entidades'
+    comment: 'Gestión de entidades'
+    nick: 'Entity'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"50","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true},{"name":"Padre","nick":"parentid","type":"integer","restriction":"","nulleable":true}]'
+    relations: '[{"attributeid":"parentid","attribute":"Padre","typeid":"onetomany","type":"Uno a muchos","moduleid":"Entity","module":"Entidades"}]'
+    icon: 'shutter.png'
+#    is_multientity: 1
+    is_base: 1
+    Permissions: [manageentity, manageentityadd, manageentityedit, manageentitydelete]
+    DependentModules: [Explorer, Contacttype]
+    increase: '0000000010'
+  Entitymanager:
+    code: "<?php echo md5(strtoupper('Entidad')) ?>"
+    name: 'Entidad'
+    comment: 'Gestión de la entidad'
+    nick: 'Entitymanager'
+    attributes: '[{"ispk":true,"name":"Código","nick":"code","type":"string","restriction":"50","nulleable":false},{"isak":true,"name":"Nombre","nick":"name","type":"string","restriction":"130","nulleable":false},{"name":"Descripción","nick":"comment","type":"string","restriction":"","nulleable":true},{"name":"Padre","nick":"parentid","type":"integer","restriction":"","nulleable":true}]'
+    relations: '[{"attributeid":"parentid","attribute":"Padre","typeid":"onetomany","type":"Uno a muchos","moduleid":"Entity","module":"Entidades"}]'
+    icon: 'shutter.png'
+    is_multientidable: 1
+    is_base: 1
+    is_active: 0
+    Permissions: [manageentity, manageselfentity]
+    DependentModules: [Entity, Note, Contacttype]
+    increase: '00000000001'

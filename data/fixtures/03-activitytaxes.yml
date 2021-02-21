@@ -1,0 +1,13 @@
+#TaxActivityRelation:
+#<?php for ($i = 1; $i <= 188; $i++):  ?>
+#  tg<?php echo $i*1000 ?>:
+#    Activity: [<?php echo $i ?>]
+#    Tax: [2]
+#    amount: '10.00'
+#    fixed: false
+#  tg<?php echo $i*5000 ?>:
+#    Activity: [<?php echo $i ?>]
+#    Tax: [5]
+#    amount: '10.00'
+#    fixed: false
+#<?php endfor ?> 

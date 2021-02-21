@@ -1,0 +1,7 @@
+Sex:
+  MALE:
+    code: MALE
+    name: 'Masculino'
+  FEMALE:
+    code: FEMALE
+    name: 'Femenino'

@@ -1,0 +1,16 @@
+Place:
+  Domicilio:
+    code: "<?php echo md5(strtoupper('Domicilio')) ?>"
+    name: 'Domicilio'
+  OtrolocalEspacioarrendado:
+    code: "<?php echo md5(strtoupper('Otro local o Espacio arrendado')) ?>"
+    name: 'Otro local o Espacio arrendado'
+  Areascomunes:
+    code: "<?php echo md5(strtoupper('Areas comunes')) ?>"
+    name: 'Areas comunes'
+  Domiciliousuario:
+    code: "<?php echo md5(strtoupper('Domicilio del usuario')) ?>"
+    name: 'Domicilio del usuario'
+  Lugaresanteriores:
+    code: "<?php echo md5(strtoupper('Lugares anteriores')) ?>"
+    name: 'Lugares anteriores'

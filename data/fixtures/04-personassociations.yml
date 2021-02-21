@@ -1,0 +1,29 @@
+#PersonActivityRelation:
+#  1:
+#    Activity: 73
+#    Person: User_admin
+#  2:
+#    Activity: 4
+#    Person: 2
+#    
+#TaxPersonRelation:
+#  1:
+#    Person: User_admin
+#    Tax: [8]
+#    amount: '262.50'
+#    fixed: true
+#  2:
+#    Person: 2
+#    Tax: [8]
+#    amount: '262.50'
+#    fixed: true
+#    
+#PersonPersonRelation:
+#  1:
+#    Employee: 1
+#    Employer: User_admin
+#    amount: 555
+#  2:
+#    Employee: 2
+#    Employer: User_admin
+#    amount: 756

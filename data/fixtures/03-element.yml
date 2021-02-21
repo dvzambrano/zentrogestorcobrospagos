@@ -1,0 +1,13 @@
+Element:
+  Hoja:
+    code: "<?php echo md5(strtoupper('Hoja')) ?>"
+    name: 'Hoja'
+  Lapicero:
+    code: "<?php echo md5(strtoupper('Lapicero')) ?>"
+    name: 'Lapicero'
+  Toner:
+    code: "<?php echo md5(strtoupper('Toner de impresora')) ?>"
+    name: 'Toner de impresora'
+  Arina:
+    code: "<?php echo md5(strtoupper('Arina')) ?>"
+    name: 'Arina'

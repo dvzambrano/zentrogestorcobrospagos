@@ -1,0 +1,65 @@
+Service:
+  1:
+    code: "<?php echo md5(strtoupper('Contabilidad')) ?>"
+    name: 'Contabilidad'
+    amount: 40
+  2:
+    code: "<?php echo md5(strtoupper('Declaración jurada')) ?>"
+    name: 'Declaración jurada'
+    amount: 25
+  3:
+    code: "<?php echo md5(strtoupper('Mecanografía')) ?>"
+    name: 'Mecanografía'
+    amount: 10
+  4:
+    code: "<?php echo md5(strtoupper('Mensajería')) ?>"
+    name: 'Mensajería'
+    amount: 60
+  5:
+    code: "<?php echo md5(strtoupper('Cobro de impuestos')) ?>"
+    name: 'Cobro de impuestos'
+    amount: 15
+  6:
+    code: "<?php echo md5(strtoupper('Cobro de chequeras')) ?>"
+    name: 'Cobro de chequeras'
+    amount: 15
+  7:
+    code: "<?php echo md5(strtoupper('Pago de áreas de trabajo')) ?>"
+    name: 'Pago de áreas de trabajo'
+    amount: 15
+  8:
+    code: "<?php echo md5(strtoupper('Pago de patentes')) ?>"
+    name: 'Pago de patentes'
+    amount: 10
+  9:
+    code: "<?php echo md5(strtoupper('Pago de seguridad social')) ?>"
+    name: 'Pago de seguridad social'
+    amount: 15
+  10:
+    code: "<?php echo md5(strtoupper('Pago de efectos electodomésticos')) ?>"
+    name: 'Pago de efectos electodomésticos'
+    amount: 15
+  11:
+    code: "<?php echo md5(strtoupper('Pago de viviendas')) ?>"
+    name: 'Pago de viviendas'
+    amount: 10
+  12:
+    code: "<?php echo md5(strtoupper('Pago de multas')) ?>"
+    name: 'Pago de multas'
+    amount: 10
+  13:
+    code: "<?php echo md5(strtoupper('Pago de agua y alcantarillado')) ?>"
+    name: 'Pago de agua y alcantarillado'
+    amount: 5
+  14:
+    code: "<?php echo md5(strtoupper('Pago de electricidad')) ?>"
+    name: 'Pago de electricidad'
+    amount: 5
+  15:
+    code: "<?php echo md5(strtoupper('Pago de teléfono')) ?>"
+    name: 'Pago de teléfono'
+    amount: 10
+  16:
+    code: "<?php echo md5(strtoupper('Otros pagos')) ?>"
+    name: 'Otros pagos'
+    amount: 10

@@ -1,0 +1,1059 @@
+Location:
+#  CUB:
+#    code: '55'
+#    name: Cuba
+##    comment: 'La tierra mas hermosa'
+#
+#  CMG:
+#    Location: CUB
+#    code: '1147'
+#    name: Camaguey
+#  CARLOSMANUELCESPEDES:
+#    Location: CMG
+#    code: '11471'
+#    name: 'CARLOS MANUEL DE CESPEDES'
+#  ESMERALDA:
+#    Location: CMG
+#    code: '11472'
+#    name: 'ESMERALDA'
+#  SIERRACUBITAS:
+#    Location: CMG
+#    code: '11473'
+#    name: 'SIERRA DE CUBITAS'
+#  MINAS:
+#    Location: CMG
+#    code: '11474'
+#    name: 'MINAS'
+#  NUEVITAS:
+#    Location: CMG
+#    code: '11475'
+#    name: 'NUEVITAS'
+#  GUAIMARO:
+#    Location: CMG
+#    code: '11476'
+#    name: 'GUAIMARO'
+#  SIBANICU:
+#    Location: CMG
+#    code: '11477'
+#    name: 'SIBANICU'
+#  CAMAGUEY:
+#    Location: CMG
+#    code: '11478'
+#    name: 'CAMAGUEY'
+#  FLORIDA:
+#    Location: CMG
+#    code: '11479'
+#    name: 'FLORIDA'
+#  VERTIENTES:
+#    Location: CMG
+#    code: '114791'
+#    name: 'VERTIENTES'
+#  JIMAGUAYU:
+#    Location: CMG
+#    code: '114792'
+#    name: 'JIMAGUAYU'
+#  SANTACRUZSUR:
+#    Location: CMG
+#    code: '114793'
+#    name: 'SANTA CRUZ DEL SUR'
+#
+#  CAV:
+#    Location: CUB
+#    code: '1148'
+#    name: 'Ciego de Avila'
+#  CHAMBAS:
+#    Location: CAV
+#    code: '11481'
+#    name: 'CHAMBAS'
+#  MORON:
+#    Location: CAV
+#    code: '11482'
+#    name: 'MORON'
+#  BOLIVIA:
+#    Location: CAV
+#    code: '11483'
+#    name: 'BOLIVIA'
+#  PRIMEROENERO:
+#    Location: CAV
+#    code: '11484'
+#    name: 'PRIMERO DE ENERO'
+#  CIROREDONDO:
+#    Location: CAV
+#    code: '11485'
+#    name: 'CIRO REDONDO'
+#  FLORENCIA:
+#    Location: CAV
+#    code: '11486'
+#    name: 'FLORENCIA'
+#  MAJAGUA:
+#    Location: CAV
+#    code: '11487'
+#    name: 'MAJAGUA'
+#  CIEGOAVILA:
+#    Location: CAV
+#    code: '11488'
+#    name: 'CIEGO DE AVILA'
+#  VENEZUELA:
+#    Location: CAV
+#    code: '11489'
+#    name: 'VENEZUELA'
+#  BARAGUA:
+#    Location: CAV
+#    code: '114891'
+#    name: 'BARAGUA'
+#
+#  CFG:
+#    Location: CUB
+#    code: '1149'
+#    name: Cienfuegos
+#  AGUADAPASAJEROS:
+#    Location: CFG
+#    code: '11491'
+#    name: 'AGUADA DE PASAJEROS'
+#  RODAS:
+#    Location: CFG
+#    code: '11492'
+#    name: 'RODAS'
+#  PALMIRA:
+#    Location: CFG
+#    code: '11493'
+#    name: 'PALMIRA'
+#  LAJAS:
+#    Location: CFG
+#    code: '11494'
+#    name: 'LAJAS'
+#  CRUCES:
+#    Location: CFG
+#    code: '11495'
+#    name: 'CRUCES'
+#  CUMANAYAGUA:
+#    Location: CFG
+#    code: '11496'
+#    name: 'CUMANAYAGUA'
+#  CIENFUEGOS:
+#    Location: CFG
+#    code: '11497'
+#    name: 'CIENFUEGOS'
+#  ABREUS:
+#    Location: CFG
+#    code: '11498'
+#    name: 'ABREUS'
+#
+#  LHA:
+#    Location: CUB
+#    code: '1150'
+#    name: 'La Habana'
+#  PLAYA:
+#    Location: LHA
+#    code: '11501'
+#    name: 'PLAYA'
+#  PLAZA:
+#    Location: LHA
+#    code: '11502'
+#    name: 'PLAZA DE LA REVOLUCION'
+#  CENTROHABANA:
+#    Location: LHA
+#    code: '11503'
+#    name: 'CENTRO HABANA'
+#  HABANAVIEJA:
+#    Location: LHA
+#    code: '11504'
+#    name: 'HABANA VIEJA'
+#  REGLA:
+#    Location: LHA
+#    code: '11505'
+#    name: 'REGLA'
+#  HABANAESTE:
+#    Location: LHA
+#    code: '11506'
+#    name: 'HABANA DEL ESTE'
+#  GUANABACOA:
+#    Location: LHA
+#    code: '11507'
+#    name: 'GUANABACOA'
+#  SANMIGUELPADRON:
+#    Location: LHA
+#    code: '11508'
+#    name: 'SAN MIGUEL DEL PADRON'
+#  DIEZOCTUBRE:
+#    Location: LHA
+#    code: '11509'
+#    name: 'DIEZ DE OCTUBRE'
+#  CERRO:
+#    Location: LHA
+#    code: '115091'
+#    name: 'CERRO'
+#  MARIANAO:
+#    Location: LHA
+#    code: '115092'
+#    name: 'MARIANAO'
+#  LALISA:
+#    Location: LHA
+#    code: '115093'
+#    name: 'LA LISA'
+#  BOYEROS:
+#    Location: LHA
+#    code: '115094'
+#    name: 'BOYEROS'
+#  ARROYONARANJO:
+#    Location: LHA
+#    code: '115095'
+#    name: 'ARROYO NARANJO'
+#  COTORRO:
+#    Location: LHA
+#    code: '115096'
+#    name: 'COTORRO'
+#
+#  GRA:
+#    Location: CUB
+#    code: '1151'
+#    name: Granma
+#  RIOCAUTO:
+#    Location: GRA
+#    code: '11511'
+#    name: 'RIO CAUTO'
+#  CAUTOCRISTO:
+#    Location: GRA
+#    code: '11512'
+#    name: 'CAUTO CRISTO'
+#  JIGUANI:
+#    Location: GRA
+#    code: '11513'
+#    name: 'JIGUANI'
+#  BAYAMO:
+#    Location: GRA
+#    code: '11514'
+#    name: 'BAYAMO'
+#  YARA:
+#    Location: GRA
+#    code: '11515'
+#    name: 'YARA'
+#  MANZANILLO:
+#    Location: GRA
+#    code: '11516'
+#    name: 'MANZANILLO'
+#  CAMPECHUELA:
+#    Location: GRA
+#    code: '11517'
+#    name: 'CAMPECHUELA'
+#  MEDIALUNA:
+#    Location: GRA
+#    code: '11518'
+#    name: 'MEDIA LUNA'
+#  NIQUERO:
+#    Location: GRA
+#    code: '11519'
+#    name: 'NIQUERO'
+#  PILON:
+#    Location: GRA
+#    code: '115191'
+#    name: 'PILON'
+#  BARTOLOMEMASO:
+#    Location: GRA
+#    code: '115192'
+#    name: 'BARTOLOME MASO'
+#  BUEYARRIBA:
+#    Location: GRA
+#    code: '115193'
+#    name: 'BUEY ARRIBA'
+#  GUISA:
+#    Location: GRA
+#    code: '115194'
+#    name: 'GUISA'
+#
+#  GTM:
+#    Location: CUB
+#    code: '1152'
+#    name: Guantanamo
+#  ELSALVADOR:
+#    Location: GTM
+#    code: '11521'
+#    name: 'EL SALVADOR'
+#  GUANTANAMO:
+#    Location: GTM
+#    code: '11522'
+#    name: 'GUANTANAMO'
+#  YATERAS:
+#    Location: GTM
+#    code: '11523'
+#    name: 'YATERAS'
+#  BARACOA:
+#    Location: GTM
+#    code: '11524'
+#    name: 'BARACOA'
+#  MAISI:
+#    Location: GTM
+#    code: '11525'
+#    name: 'MAISI'
+#  IMIAS:
+#    Location: GTM
+#    code: '11526'
+#    name: 'IMIAS'
+#  SANANTONIOSUR:
+#    Location: GTM
+#    code: '11527'
+#    name: 'SAN ANTONIO DEL SUR'
+#  MANUELTAMES:
+#    Location: GTM
+#    code: '11528'
+#    name: 'MANUEL TAMES'
+#  CAIMANERA:
+#    Location: GTM
+#    code: '11529'
+#    name: 'CAIMANERA'
+#  NICETOPEREZ:
+#    Location: GTM
+#    code: '115291'
+#    name: 'NICETO PEREZ'
+
+  HLG:
+#    Location: CUB
+    code: '1153'
+    name: Holguin
+  GIBARA:
+    Location: HLG
+    code: '11531'
+    name: 'GIBARA'
+  RAFAELFREIRE:
+    Location: HLG
+    code: '11532'
+    name: 'RAFAEL FREIRE'
+  BANES:
+    Location: HLG
+    code: '11533'
+    name: 'BANES'
+  ANTILLA:
+    Location: HLG
+    code: '11534'
+    name: 'ANTILLA'
+  BAGUANOS:
+    Location: HLG
+    code: '11535'
+    name: 'BAGUANOS'
+  HOLGUIN:
+    Location: HLG
+    code: '11536'
+    name: 'HOLGUIN'
+  AlcidesPino:
+    Location: HOLGUIN
+    code: '115361'
+    name: 'Alcides Pino'
+  RAlcidesPino:
+    Location: AlcidesPino
+    code: '1153611'
+    name: 'Alcides Pino'
+  VistaAlegre:
+    Location: HOLGUIN
+    code: '115362'
+    name: 'Vista Alegre'
+  RVistaAlegre:
+    Location: VistaAlegre
+    code: '1153621'
+    name: 'Vista Alegre'
+  LaQuinta:
+    Location: VistaAlegre
+    code: '1153622'
+    name: 'La Quinta'
+  PedroDiazCoello:
+    Location: HOLGUIN
+    code: '115363'
+    name: 'Pedro Díaz Coello'
+  SanField:
+    Location: PedroDiazCoello
+    code: '1153631'
+    name: 'San Field'
+  Revolucion:
+    Location: PedroDiazCoello
+    code: '1153632'
+    name: 'Revolución'
+  ElBosque:
+    Location: PedroDiazCoello
+    code: '1153633'
+    name: 'El Bosque'
+  HnosAguilera:
+    Location: PedroDiazCoello
+    code: '1153634'
+    name: 'Hermanos Aguilera'
+  PuebloNuevo:
+    Location: HOLGUIN
+    code: '115364'
+    name: 'Pueblo Nuevo'
+  26Julio:
+    Location: PuebloNuevo
+    code: '1153641'
+    name: '26 de julio'
+  VillaNueva:
+    Location: PuebloNuevo
+    code: '1153642'
+    name: 'Villa Nueva'
+  HildaTorres:
+    Location: PuebloNuevo
+    code: '1153643'
+    name: 'Hilda Torres'
+  RPuebloNuevo:
+    Location: PuebloNuevo
+    code: '1153644'
+    name: 'Pueblo Nuevo'
+  Harlem:
+    Location: HOLGUIN
+    code: '115365'
+    name: 'Harlem'
+  Santiesteban:
+    Location: Harlem
+    code: '1153651'
+    name: 'Santiesteban'
+  ElPiti:
+    Location: Harlem
+    code: '1153652'
+    name: 'El Piti'
+  CiudadJardin:
+    Location: Harlem
+    code: '1153653'
+    name: 'Ciudad Jardín'
+  RHarlem:
+    Location: Harlem
+    code: '1153654'
+    name: 'Harlem'
+  AlexUrquiola:
+    Location: HOLGUIN
+    code: '115366'
+    name: 'Alex Urquiola'
+  RAlexUrquiola:
+    Location: AlexUrquiola
+    code: '1153661'
+    name: 'Alex Urquiola'
+  RamonQuintana:
+    Location: AlexUrquiola
+    code: '1153662'
+    name: 'Ramón Quintana'
+  EmilioBarcenas:
+    Location: AlexUrquiola
+    code: '1153663'
+    name: 'Emilio Barcenas'
+  FabricaCervezas:
+    Location: AlexUrquiola
+    code: '1153664'
+    name: 'Fabrica de Cervezas'
+  EdecioPerez:
+    Location: HOLGUIN
+    code: '115367'
+    name: 'Edecio Pérez'
+  ElJardin:
+    Location: EdecioPerez
+    code: '1153671'
+    name: 'El Jardín'
+  OscarLucero:
+    Location: EdecioPerez
+    code: '1153672'
+    name: 'Oscar Lucero'
+  Matamoros:
+    Location: EdecioPerez
+    code: '1153673'
+    name: 'Matamoros'
+  ITH:
+    Location: EdecioPerez
+    code: '1153674'
+    name: 'ITH'
+  MINFAR:
+    Location: EdecioPerez
+    code: '1153675'
+    name: 'MINFAR'
+  ElCoco:
+    Location: EdecioPerez
+    code: '1153676'
+    name: 'El Coco'
+  DistritoLenin:
+    Location: HOLGUIN
+    code: '115368'
+    name: 'Distrito Lenin'
+  RLenin:
+    Location: DistritoLenin
+    code: '1153681'
+    name: 'Lenin'
+  Libertad:
+    Location: DistritoLenin
+    code: '1153682'
+    name: 'Libertad'
+  NuevoLlano:
+    Location: DistritoLenin
+    code: '1153683'
+    name: 'Nuevo Llano'
+  SalidaSanAndres:
+    Location: DistritoLenin
+    code: '1153684'
+    name: 'Salida de San Andrés'
+  CentroCiudadNorte:
+    Location: HOLGUIN
+    code: '115369'
+    name: 'Centro Ciudad Norte'
+  Sayas:
+    Location: CentroCiudadNorte
+    code: '115369122'
+    name: 'Sayas'
+  ElLlano:
+    Location: CentroCiudadNorte
+    code: '115369211'
+    name: 'El Llano'
+  RCentroCiudadNorte:
+    Location: CentroCiudadNorte
+    code: '1153692134'
+    name: 'Centro Ciudad Norte'
+  CentroCiudadSur:
+    Location: HOLGUIN
+    code: '1153691'
+    name: 'Centro Ciudad Sur'
+  RCentroCiudadSur:
+    Location: CentroCiudadSur
+    code: '11536911'
+    name: 'Centro Ciudad Sur'
+  Peralta:
+    Location: CentroCiudadSur
+    code: '11536912'
+    name: 'Peralta'
+  Palomo:
+    Location: CentroCiudadSur
+    code: '11536913'
+    name: 'Palomo'
+  Purnio:
+    Location: HOLGUIN
+    code: '1153692'
+    name: 'Purnio'
+  SanAndres:
+    Location: HOLGUIN
+    code: '1153693'
+    name: 'San Andrés'
+  LomaBlanca:
+    Location: SanAndres
+    code: '11536931'
+    name: 'Loma Blanca'
+  RSanAndres:
+    Location: SanAndres
+    code: '11536932'
+    name: 'San Andrés'
+  AguasClaras:
+    Location: HOLGUIN
+    code: '1153694'
+    name: 'Aguas Claras'
+  Yaraniquen:
+    Location: AguasClaras
+    code: '11536941'
+    name: 'Yaraniquén'
+  RAguasClaras:
+    Location: AguasClaras
+    code: '11536942'
+    name: 'Aguas Claras'
+  LaTrocha:
+    Location: AguasClaras
+    code: '11536943'
+    name: 'La Trocha'
+  Managuaco:
+    Location: AguasClaras
+    code: '11536944'
+    name: 'Managuaco'
+  ElPurial:
+    Location: HOLGUIN
+    code: '1153695'
+    name: 'El Purial'
+  SaoArriba:
+    Location: HOLGUIN
+    code: '1153696'
+    name: 'Sao Arriba'
+  SanRafael:
+    Location: HOLGUIN
+    code: '1153697'
+    name: 'San Rafael'
+  RSanRafael:
+    Location: SanRafael
+    code: '11536971'
+    name: 'San Rafael'
+  LasBiajacas:
+    Location: SanRafael
+    code: '11536972'
+    name: 'Las Biajacas'
+  LaCuaba:
+    Location: HOLGUIN
+    code: '1153698'
+    name: 'La Cuaba'
+  RLaCuaba:
+    Location: LaCuaba
+    code: '11536981'
+    name: 'La Cuaba'
+  Pedernales:
+    Location: HOLGUIN
+    code: '1153699'
+    name: 'Pedernales'
+  28septiembre:
+    Location: Pedernales
+    code: '1153699111'
+    name: '28 de septiembre'
+  Teresa:
+    Location: Pedernales
+    code: '11536992123'
+    name: 'Teresa'
+  ElPazon:
+    Location: Pedernales
+    code: '11536993321'
+    name: 'El Pazón'
+  Yareyal:
+    Location: HOLGUIN
+    code: '11536991'
+    name: 'Yareyal'
+  BrisasYareyal:
+    Location: Yareyal
+    code: '115369911'
+    name: 'Brisas de Yareyal'
+  LaCeiba:
+    Location: Yareyal
+    code: '115369912'
+    name: 'La Ceiba'
+  Damian:
+    Location: Yareyal
+    code: '115369913'
+    name: 'Damian'
+  Tomy:
+    Location: Yareyal
+    code: '115369914'
+    name: 'Tomy'
+  ZonaIndustrial:
+    Location: HOLGUIN
+    code: '11536992'
+    name: 'Zona Industrial'
+  Guirabito:
+    Location: ZonaIndustrial
+    code: '115369921'
+    name: 'Guirabito'
+  Campuchea:
+    Location: ZonaIndustrial
+    code: '115369922'
+    name: 'Campuchea'
+  RZonaIndustrial:
+    Location: ZonaIndustrial
+    code: '115369923'
+    name: 'Zona Industrial'
+  Certeneja:
+    Location: ZonaIndustrial
+    code: '115369924'
+    name: 'Certeneja'
+  LaYuraguana:
+    Location: HOLGUIN
+    code: '11536993'
+    name: 'La Yuraguana'
+  RLaYuraguana:
+    Location: LaYuraguana
+    code: '115369931'
+    name: 'La Yuraguana'
+
+  URBANONORIS:
+    Location: HLG
+    code: '11538'
+    name: 'URBANO NORIS'
+  CUETO:
+    Location: HLG
+    code: '11539'
+    name: 'CUETO'
+  MAYARI:
+    Location: HLG
+    code: '115391'
+    name: 'MAYARI'
+  FRANKPAIS:
+    Location: HLG
+    code: '115392'
+    name: 'FRANK PAIS'
+  MOA:
+    Location: HLG
+    code: '115393'
+    name: 'MOA'
+  CACOCM:
+    Location: HLG
+    code: '115394'
+    name: 'CACOCM'
+  SAGUATANAMO:
+    Location: HLG
+    code: '115395'
+    name: 'SAGUA DE TANAMO'
+
+#  IJV:
+#    Location: CUB
+#    code: '1154'
+#    name: 'Isla de la Juventud'
+#  ISLAJUVENTUD:
+#    Location: IJV
+#    code: '11541'
+#    name: 'ISLA DE LA JUVENTUD'
+#
+#
+#  ART:
+#    Location: CUB
+#    code: '1155'
+#    name: 'Artemisa'
+#  BAHIAHONDA:
+#    Location: ART
+#    code: '11551'
+#    name: 'BAHIA HONDA'
+#  MARIEL:
+#    Location: ART
+#    code: '11552'
+#    name: 'MARIEL'
+#  GUANAJAY:
+#    Location: ART
+#    code: '11553'
+#    name: 'GUANAJAY'
+#  CAIMITO:
+#    Location: ART
+#    code: '11554'
+#    name: 'CAIMITO'
+#  BAUTA:
+#    Location: ART
+#    code: '11555'
+#    name: 'BAUTA'
+#  SANANTBANOS:
+#    Location: ART
+#    code: '11556'
+#    name: 'SAN ANTONIO DE LOS BAÑOS'
+#  GUIRA:
+#    Location: ART
+#    code: '11557'
+#    name: 'GUIRA DE MELENA'
+#  ALQUIZAR:
+#    Location: ART
+#    code: '11558'
+#    name: 'ALQUIZAR'
+#  ARTEMISA:
+#    Location: ART
+#    code: '11559'
+#    name: 'ARTEMISA'
+#  CANDELARIA:
+#    Location: ART
+#    code: '115591'
+#    name: 'CANDELARIA'
+#  SANCRISTOBAL:
+#    Location: ART
+#    code: '115592'
+#    name: 'SAN CRISTOBAL'
+#
+#  MAY:
+#    Location: CUB
+#    code: '1225'
+#    name: 'Mayabeque'
+#  BEJUCAL:
+#    Location: MAY
+#    code: '12251'
+#    name: 'BEJUCAL'
+#  SANJOSELAJAS:
+#    Location: MAY
+#    code: '12252'
+#    name: 'SAN JOSE DE LAS LAJAS'
+#  JARUCO:
+#    Location: MAY
+#    code: '12253'
+#    name: 'JARUCO'
+#  STACRUZNORTE:
+#    Location: MAY
+#    code: '12254'
+#    name: 'SANTA CRUZ DEL NORTE'
+#  MADRUGA:
+#    Location: MAY
+#    code: '12255'
+#    name: 'MADRUGA'
+#  NUEVAPAZ:
+#    Location: MAY
+#    code: '12256'
+#    name: 'NUEVA PAZ'
+#  SANNICOLAS:
+#    Location: MAY
+#    code: '12257'
+#    name: 'SAN NICOLAS'
+#  GUINES:
+#    Location: MAY
+#    code: '12258'
+#    name: 'GUINES'
+#  MELENASUR:
+#    Location: MAY
+#    code: '12259'
+#    name: 'MELENA DEL SUR'
+#  BATABANO:
+#    Location: MAY
+#    code: '122591'
+#    name: 'BATABANO'
+#  QUIVICAN:
+#    Location: MAY
+#    code: '122592'
+#    name: 'QUIVICAN'
+#
+#  LTU:
+#    Location: CUB
+#    code: '1156'
+#    name: 'Las Tunas'
+#  MANATI:
+#    Location: LTU
+#    code: '11561'
+#    name: 'MANATI'
+#  PUERTOPADRE:
+#    Location: LTU
+#    code: '11562'
+#    name: 'PUERTO PADRE'
+#  JESUSMENENDEZ:
+#    Location: LTU
+#    code: '11563'
+#    name: 'JESUS MENENDEZ'
+#  MAJIBACOA:
+#    Location: LTU
+#    code: '11564'
+#    name: 'MAJIBACOA'
+#  LASTUNAS:
+#    Location: LTU
+#    code: '11565'
+#    name: 'LAS TUNAS'
+#  JOBABO:
+#    Location: LTU
+#    code: '11566'
+#    name: 'JOBABO'
+#  COLOMBIA:
+#    Location: LTU
+#    code: '11567'
+#    name: 'COLOMBIA'
+#  AMANCIO:
+#    Location: LTU
+#    code: '11568'
+#    name: 'AMANCIO'
+#
+#  MTZ:
+#    Location: CUB
+#    code: '1157'
+#    name: Matanzas
+#  MATANZAS:
+#    Location: MTZ
+#    code: '11571'
+#    name: 'MATANZAS'
+#  CARDENAS:
+#    Location: MTZ
+#    code: '11572'
+#    name: 'CARDENAS'
+#  MARTI:
+#    Location: MTZ
+#    code: '11573'
+#    name: 'MARTI'
+#  COLON:
+#    Location: MTZ
+#    code: '11574'
+#    name: 'COLON'
+#  PERICO:
+#    Location: MTZ
+#    code: '11575'
+#    name: 'PERICO'
+#  JOVELLANOS:
+#    Location: MTZ
+#    code: '11576'
+#    name: 'JOVELLANOS'
+#  PEDROBETANCOURT:
+#    Location: MTZ
+#    code: '11577'
+#    name: 'PEDRO BETANCOURT'
+#  LIMONAR:
+#    Location: MTZ
+#    code: '11578'
+#    name: 'LIMONAR'
+#  UNIONREYES:
+#    Location: MTZ
+#    code: '11579'
+#    name: 'UNION DE REYES'
+#  CIENAGAZAPATA:
+#    Location: MTZ
+#    code: '115791'
+#    name: 'CIENAGA DE ZAPATA'
+#  JAGUEYGRANDE:
+#    Location: MTZ
+#    code: '115792'
+#    name: 'JAGUEY GRANDE'
+#  CALIMETE:
+#    Location: MTZ
+#    code: '115793'
+#    name: 'CALIMETE'
+#  LOSARABOS:
+#    Location: MTZ
+#    code: '115794'
+#    name: 'LOS ARABOS'
+#
+#  PRI:
+#    Location: CUB
+#    code: '1158'
+#    name: 'Pinar del Rio'
+#  SANDINO:
+#    Location: PRI
+#    code: '11581'
+#    name: 'SANDINO'
+#  MANTUA:
+#    Location: PRI
+#    code: '11582'
+#    name: 'MANTUA'
+#  MINAS:
+#    Location: PRI
+#    code: '11583'
+#    name: 'MINAS DE MATAHAMBRE'
+#  VINALES:
+#    Location: PRI
+#    code: '11584'
+#    name: 'VIÑALES'
+#  LAPALMA:
+#    Location: PRI
+#    code: '11585'
+#    name: 'LA PALMA'
+#  LOSPALACIOS:
+#    Location: PRI
+#    code: '11586'
+#    name: 'LOS PALACIOS'
+#  CONSOLACIONSUR:
+#    Location: PRI
+#    code: '11587'
+#    name: 'CONSOLACION DEL SUR'
+#  PINARRIO:
+#    Location: PRI
+#    code: '11588'
+#    name: 'PINAR DEL RIO'
+#  SANLUISPR:
+#    Location: PRI
+#    code: '11589'
+#    name: 'SAN LUIS'
+#  SANJUANMTZ:
+#    Location: PRI
+#    code: '115891'
+#    name: 'SAN JUAN Y MARTINEZ'
+#  GUANE:
+#    Location: PRI
+#    code: '115892'
+#    name: 'GUANE'
+#
+#  SSP:
+#    Location: CUB
+#    code: '1159'
+#    name: 'Sancti Spiritus'
+#  YAGUAJAY:
+#    Location: SSP
+#    code: '11591'
+#    name: 'YAGUAJAY'
+#  JATIBONICO:
+#    Location: SSP
+#    code: '11592'
+#    name: 'JATIBONICO'
+#  TAGUASCO:
+#    Location: SSP
+#    code: '11593'
+#    name: 'TAGUASCO'
+#  CABAIGUAN:
+#    Location: SSP
+#    code: '11594'
+#    name: 'CABAIGUAN'
+#  FOMENTO:
+#    Location: SSP
+#    code: '11595'
+#    name: 'FOMENTO'
+#  TRINIDAD:
+#    Location: SSP
+#    code: '11596'
+#    name: 'TRINIDAD'
+#  SANCTISPIRITUS:
+#    Location: SSP
+#    code: '11597'
+#    name: 'SANCTI SPIRITUS'
+#  LASIERPE:
+#    Location: SSP
+#    code: '11598'
+#    name: 'LA SIERPE'
+#
+#  SCU:
+#    Location: CUB
+#    code: '1160'
+#    name: 'Santiago de Cuba'
+#  CONTRAMAESTRE:
+#    Location: SCU
+#    code: '11601'
+#    name: 'CONTRAMAESTRE'
+#  MELLA:
+#    Location: SCU
+#    code: '11602'
+#    name: 'MELLA'
+#  SANLUISSC:
+#    Location: SCU
+#    code: '11603'
+#    name: 'SAN LUIS'
+#  SEGUNDOFRENTE:
+#    Location: SCU
+#    code: '11604'
+#    name: 'SEGUNDO FRENTE'
+#  SONGOLAMAYA:
+#    Location: SCU
+#    code: '11605'
+#    name: 'SONGO LA MAYA'
+#  SANTIAGOCUBA:
+#    Location: SCU
+#    code: '11606'
+#    name: 'SANTIAGO DE CUBA'
+#  PALMASORIANO:
+#    Location: SCU
+#    code: '11607'
+#    name: 'PALMA SORIANO'
+#  TERCERFRENTE:
+#    Location: SCU
+#    code: '11608'
+#    name: 'TERCER FRENTE'
+#  GUAMA:
+#    Location: SCU
+#    code: '11609'
+#    name: 'GUAMA'
+#
+#  VCL:
+#    Location: CUB
+#    code: '1161'
+#    name: 'Villa Clara'
+#  CORRALILLO:
+#    Location: VCL
+#    code: '11611'
+#    name: 'CORRALILLO'
+#  QUEMADOGUINES:
+#    Location: VCL
+#    code: '11612'
+#    name: 'QUEMADO DE GUINES'
+#  SAGUALAGRANDE:
+#    Location: VCL
+#    code: '11613'
+#    name: 'SAGUA LA GRANDE'
+#  ENCRUCIJADA:
+#    Location: VCL
+#    code: '11614'
+#    name: 'ENCRUCIJADA'
+#  CAMAJUANI:
+#    Location: VCL
+#    code: '11615'
+#    name: 'CAMAJUANI'
+#  CAIBARIEN:
+#    Location: VCL
+#    code: '11616'
+#    name: 'CAIBARIEN'
+#  REMEDIOS:
+#    Location: VCL
+#    code: '11617'
+#    name: 'REMEDIOS'
+#  PLACETAS:
+#    Location: VCL
+#    code: '11618'
+#    name: 'PLACETAS'
+#  SANTACLARA:
+#    Location: VCL
+#    code: '11619'
+#    name: 'SANTA CLARA'
+#  CIFUENTES:
+#    Location: VCL
+#    code: '116191'
+#    name: 'CIFUENTES'
+#  SANTODOMINGO:
+#    Location: VCL
+#    code: '116192'
+#    name: 'SANTO DOMINGO'
+#  RANCHUELO:
+#    Location: VCL
+#    code: '116193'
+#    name: 'RANCHUELO'
+#  MANICARAGUA:
+#    Location: VCL
+#    code: '116194'
+#    name: 'MANICARAGUA'
